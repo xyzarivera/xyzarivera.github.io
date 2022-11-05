@@ -139,7 +139,7 @@ const IndexPage = () => {
         </div>
         <div className="basis-4/12 flex flex-col">
           <h4 className="text-white font-serif">Location</h4>
-          <p className="text-gray-500 py-2">Manila, Philippines</p>
+          <p className="text-white py-2">Manila, Philippines</p>
         </div>
       </footer>
     </div >
