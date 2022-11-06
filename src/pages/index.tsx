@@ -4,21 +4,27 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const IndexPage = () => {
   return (
-    <div>
+    <>
       <main className="flex flex-col">
         <section>
-          <h1 className="my-6">Xyza Rivera</h1>
-          <h2 className="mt-16 mb-10">Software Engineer | Visual Creative</h2>
+          <h1 className="my-2 lg:my-6 text-4xl lg:text-6xl">Xyza Rivera</h1>
+          <h2 className="mt-4 lg:mt-16 mb-4 lg:mb-10 text-sm lg:text-xl">Software Engineer | Visual Creative</h2>
         </section>
-        <section className="flex px-20 pb-16">
-          <div className="basis-1/2 p-5 flex justify-end align-center">
+        <section className="flex flex-col lg:flex-row lg:px- md:px-10 px-4 pb-16">
+          <div className="hidden md:flex basis-1/2 p-5 justify-center lg:justify-end align-center">
             <StaticImage alt="xyza's picture" src="../images/xyza.png" placeholder="blurred"
               layout="fixed"
               width={435}
               height={435} />
           </div>
-          <div className="basis-1/2 p-5">
-            <p className="mb-2 mt-10 font-serif">I am a <strong>software engineer</strong> passionate about building products focused on user value and productivity.</p>
+          <div className="visible md:hidden p-5 flex justify-center align-center">
+            <StaticImage alt="xyza's picture" src="../images/xyza.png" placeholder="blurred"
+              layout="fixed"
+              width={200}
+              height={200} />
+          </div>
+          <div className="lg:basis-1/2 p-5 md:px-24 lg:px-5">
+            <p className="mb-2 lg:mt-10 font-serif">I am a <strong>software engineer</strong> passionate about building products focused on user value and productivity.</p>
             <p className="mb-2 text-sm">Currently improving workplace processes at <a href="https://www.globe.com.ph" target="_blank" rel="noreferrer">Globe Telecom</a></p>
             <p className="mb-5 text-sm italic">ReactJS, JavaScript, TypeScript, Google Cloud Platform, Firebase</p>
 
@@ -28,24 +34,24 @@ const IndexPage = () => {
             <p className="text-sm mb-2">learning <a href="https://www.youtube.com/c/XyzaRivera" target="_blank" rel="noreferrer">cinematography</a></p>
           </div>
         </section>
-        <section className="w-screen bg-violet-200 flex align-center px-28 py-24">
-          <h3 className="basis-5/12 text-left my-auto">Skills</h3>
-          <div className="basis-7/12">
-            <p className="text-2xl py-2">Full-stack Web Development</p>
-            <p className="text-2xl py-2">Serverless Architecture</p>
-            <p className="text-2xl py-2">User Experience Design</p>
+        <section className="w-screen bg-violet-200 flex flex-col md:flex-row align-center lg:px-28 md:px-10 px-8 py-12 md:py-24">
+          <h3 className="md:basis-5/12 text-left my-auto text-4xl lg:text-6xl">Skills</h3>
+          <div className="md:basis-7/12">
+            <p className="lg:text-2xl py-2">Full-stack Web Development</p>
+            <p className="lg:text-2xl py-2">Serverless Architecture</p>
+            <p className="lg:text-2xl py-2">User Experience Design</p>
           </div>
         </section>
-        <section className="w-screen flex align-center px-28 py-32">
-          <h3 className="basis-5/12 text-left  my-auto">Certifications</h3>
-          <div className="basis-7/12 flex flex-col">
-            <a className="text-2xl py-2 text-current no-underline hover:underline" href="https://www.credential.net/a3221740-82d3-4fbc-af4e-b474cc487bd0" target="_blank" rel="noreferrer">Google Cloud Certified Associate Cloud Engineer</a>
-            <a className="text-2xl py-2 text-current no-underline hover:underline" href="https://www.credly.com/badges/4beef1a3-898f-4998-85c5-cad57b71f597/linked_in_profile" target="_blank" rel="noreferrer">AWS Certified Solutions Architect - Associate</a>
+        <section className="w-screen flex flex-col md:flex-row align-center lg:px-28 md:px-10 px-8 py-20 md:py-28">
+          <h3 className="md:basis-5/12 text-left  my-auto text-4xl lg:text-6xl">Certifications</h3>
+          <div className="lg:basis-7/12 flex flex-col">
+            <a className="lg:text-2xl py-2 text-current no-underline hover:underline" href="https://www.credential.net/a3221740-82d3-4fbc-af4e-b474cc487bd0" target="_blank" rel="noreferrer">Google Cloud Certified Associate Cloud Engineer</a>
+            <a className="lg:text-2xl py-2 text-current no-underline hover:underline" href="https://www.credly.com/badges/4beef1a3-898f-4998-85c5-cad57b71f597/linked_in_profile" target="_blank" rel="noreferrer">AWS Certified Solutions Architect - Associate</a>
           </div>
         </section>
-        <section className="w-screen bg-black px-28 py-20">
-          <h3 className="my-auto text-left text-white">Projects</h3>
-          <div className="flex flex-start justify-between py-10">
+        <section className="w-screen bg-black flex-col md:flex-row align-center lg:px-28 md:px-10 px-8 py-20">
+          <h3 className="my-auto text-left text-white text-4xl lg:text-6xl">Projects</h3>
+          <div className="flex flex-start justify-between py-10 overflow-x-auto">
             <div className="basis-1/3 flex flex-col items-center p-2">
               <a href="https://xyzarivera.notion.site/xyzarivera/8b07afbfc547484c871413528acc4daf?v=fa6d552026cb424eb756a112d46b6e93"
                 target="_blank" rel="noreferrer"
@@ -105,8 +111,8 @@ const IndexPage = () => {
             </div>
           </div>
         </section>
-        <section className="w-screen flex align-center px-28 py-44">
-          <h3 className="basis-8/12 text-left my-auto">Let's Connect</h3>
+        <section className="w-screen flex flex-col md:flex-row align-center lg:px-28 md:px-10 px-8 py-20 lg:py-44">
+          <h3 className="basis-8/12 text-left my-auto text-4xl lg:text-6xl">Let's Connect</h3>
           <div className="basis-4/12 flex flex-col">
             <a className="text-2xl py-2 text-current decoration-1 hover:decoration-2"
               href="https://www.linkedin.com/in/xyzarivera/" target="_blank" rel="noreferrer">
@@ -131,18 +137,21 @@ const IndexPage = () => {
           </div>
         </section>
       </main>
-      <footer className="w-full bg-black px-28 py-20 flex">
-        <div className="basis-8/12 flex flex-col">
+      <footer className="w-full bg-black flex flex-col md:flex-row lg:px-28 md:px-10 px-8 py-20 ">
+        <div className="md:basis-8/12 flex flex-col">
           <h3 className="text-lg text-white font-serif">Xyza Rivera</h3>
           <p className="text-gray-500 py-2">Software Engineer | Visual Creative</p>
-          <p className="text-white mt-48 text-xs">Copyright © 2022 Xyza Rivera. All rights reserved.</p>
+          <p className="hidden md:flex text-white mt-48 text-xs">Copyright © 2022 Xyza Rivera. All rights reserved.</p>
+
         </div>
-        <div className="basis-4/12 flex flex-col">
+        <div className="md:basis-4/12 flex flex-col">
           <h4 className="text-white font-serif">Location</h4>
           <p className="text-white py-2">Manila, Philippines</p>
         </div>
+        <p className="flex md:hidden text-white mt-48 text-xs">Copyright © 2022 Xyza Rivera. All rights reserved.</p>
+
       </footer>
-    </div >
+    </>
   )
 
 }
