@@ -23,7 +23,7 @@ const IndexPage = () => {
               width={200}
               height={200} />
           </div>
-          <div className="lg:basis-1/3 p-5 pr-26 md:px-24 lg:px-5">
+          <div className="lg:basis-1/3 p-5 md:px-24 lg:px-5">
             <p className="mb-2 lg:mt-10 font-serif">I am a <strong>software engineer</strong> passionate about building products focused on user value and productivity.</p>
             <p className="mb-2 text-sm">Currently improving workplace processes at <a href="https://www.globe.com.ph" target="_blank" rel="noreferrer">Globe Telecom</a></p>
             <p className="mb-5 text-sm italic">ReactJS, JavaScript, TypeScript, Google Cloud Platform, Firebase</p>
