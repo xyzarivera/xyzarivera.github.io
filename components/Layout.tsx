@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Head from "next/head";
 import React, { ReactNode } from "react";
 
@@ -12,6 +13,7 @@ export default function Layout({ children }: Props) {
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       {children}
+      <Footer/>
     </>
   );
 }
