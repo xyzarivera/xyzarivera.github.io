@@ -10,11 +10,9 @@ export default function Home() {
       <Head>
         <title>Xyza</title>
         <meta name="description" content="Xyza Rivera's digital garden" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Main>
-        <div className="flex flex-col">
+        <div className="px-4 pt-60 flex flex-col">
         {links.map((link) => {
           return (
             <Link href={`/${link}`} key={link}>

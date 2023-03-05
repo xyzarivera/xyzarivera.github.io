@@ -6,7 +6,7 @@ interface Props {
 
 const CustomMain = ({children}: Props) => {
   return(
-    <main className="container pt-60 px-4">{children}</main>
+    <main className="container">{children}</main>
   )
 }
 
